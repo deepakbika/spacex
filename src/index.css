@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+   background: #dddddd;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.row {
+	display: flex;
+	align-items: end;
+}
+.filterSection{
+	flex:2;
+	background: #f6f4f4;
+    padding: 10px;
+	max-width: 170px;
+}
+.contentSection {
+	flex:8;
+	margin-bottom: 50px;
+}
+.container {
+    display: inline-block;
+    margin: 0 15px 15px;
+    padding: 0 10px 10px;
+    max-width: 160px;
+    background: #f6f4f4;
+}
+
+.container img{
+	width: 100%;
+	background: #dddddd;
+}
+.filterSection button{
+	background: #8BC34A;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+.filterSection button:active{
+	background: #9fdf55;
+}
+
+.filterSection p{
+	text-align: center;
+    border-bottom: 1px solid #b5bec1;
+    padding: 5px;
+    margin: 10px;
+	font-size: 14px;
+}
+footer {
+	text-align: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #dbdada;
+	
+}
+
+@media (max-width: 700px){
+	.row{flex-direction: column;}
+	.filterSection{max-width: 100%;margin: 15px;text-align:center;}
+	.container{max-width: 100%;}
+	.filterSection button{min-width: 115px;}
+	.launch_success{text-align:center;}
+}
